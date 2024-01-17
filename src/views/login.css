@@ -1,0 +1,54 @@
+@keyframes zoomInOut {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.login-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(115deg, rgb(0, 0, 0) 5.8%, rgb(178, 14, 14) 112.6%); /* Gradient color */
+  animation: zoomInOut 1.5s ease-in-out; /* Zoom in/out animation */
+}
+
+.login-container::before {
+  content: 'Want To Report A Crime?';
+  color: #fff; /* Change the text color as needed */
+  font-size: 24px; /* Adjust the font size as needed */
+  margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.login-container::after {
+  content: '';
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/1200px-MetaMask_Fox.svg.png') no-repeat;
+  background-size: contain;
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the logo */
+  opacity: 0.8; /* Adjust the opacity as needed */
+}
+
+.login-navlink {
+  display: contents;
+}
+
+.login-component {
+  text-decoration: none;
+}

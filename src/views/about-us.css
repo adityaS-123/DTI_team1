@@ -1,0 +1,15 @@
+.about-us-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-us-container1 {
+  width: 1652px;
+}
+.about-us-container2 {
+  display: contents;
+}
